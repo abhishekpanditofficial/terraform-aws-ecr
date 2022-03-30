@@ -10,3 +10,6 @@ output "ecr_name" {
 output "ecr_repository" {
   value = module.terraform_aws_ecr.ecr_repository
 }
+output "ecr_repository_policy_name" {
+  value = module.terraform_aws_ecr.ecr_repository_policy_name
+}

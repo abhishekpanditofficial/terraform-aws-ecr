@@ -10,3 +10,6 @@ output "ecr_name" {
 output "ecr_repository" {
   value = aws_ecr_repository.image.repository_url
 }
+output "ecr_repository_policy_name" {
+  value = aws_ecr_repository_policy.imagepolicy.repository
+}

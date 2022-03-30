@@ -23,4 +23,9 @@ func TestTerraformEcrExample(t *testing.T) {
 	// ECR Test
 	ecr_name := terraform.Output(t, terraformOptions, "ecr_name")
 	assert.Equal(t, "image", ecr_name)
+
+	
+	// ECR Repo policy Test
+	ecr_repository_policy_name := terraform.Output(t, terraformOptions, "ecr_repository_policy_name")
+	assert.Equal(t, ecr_name, ecr_repository_policy_name)
 }
